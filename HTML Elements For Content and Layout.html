@@ -1,0 +1,102 @@
+<!-- 1. Embedding Multimedia in Educational Content
+
+Completion Criteria:
+
+    The HTML document must include at least one example of each multimedia element (image, audio, video) related to the educational content.
+
+    Each multimedia element must be appropriately captioned or described to aid understanding.
+
+    The page should be structured semantically, with clear headings and descriptive text accompanying each multimedia element to contextualize its relevance to the educational content. 
+
+2. Crafting a Semantic Web Document
+
+Completion Criteria:
+
+    The web document must employ semantic HTML5 elements to structure the content logically and accessibly.
+
+    The page should make appropriate use of <article>, <section>, <nav>, <header>,  <main> , and 
+    <footer>  elements where relevant to the content.
+
+    Headings should be used to structure the content hierarchically, improving both readability and accessibility.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Learning Docs</title>
+</head>
+
+<body>
+    <header>
+        <h1>Time To Learn Some HTML</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#helpful-html-images">Helpful HTML Images</a></li> <!-- Link to the section with id="helpful-html-images" -->
+            <li><a href="#spotify">Spotify</a></li> <!-- Link to the section with id="spotify" -->
+            <li><a href="#video">Video</a></li> <!-- Link to the section with id="video" -->
+        </ul>
+    </nav>
+
+    <main>
+        <article> <!-- Main content area -->
+            <section> <!-- Section for HTML Introduction -->
+                <header>
+                    <h2>HTML Introduction</h2>
+                </header>
+                <p>HTML (HyperText Markup Language) is the standard language for creating web pages. It describes the structure of a web page.</p> <!-- Description of HTML -->
+            </section>
+
+            <section id="helpful-html-images">  <!-- Section for Helpful HTML Images -->
+                <header>
+                    <h2>Helpful HTML Images</h2>
+                </header>
+                <p>Here are some helpful images to guide you through HTML.</p>
+                <figure> 
+                    <img src="https://media.licdn.com/dms/image/D5622AQFPL9RJyvNeAQ/feedshare-shrink_800/0/1680090560913?e=1723680000&v=beta&t=luZP0klal9DZ6lIODF6qSZwBgZjD557N7KcxsZAJ5eA"
+                         alt="A little Bit fuzzy picture of HTML" width="400" height="300"> <!-- Image of HTML -->
+                    <figcaption>HTML Cheat Sheet</figcaption> <!-- Caption for the image -->
+                </figure>
+                <figure>
+                    <img src="https://pbs.twimg.com/media/FiED9QnXoAYWYAR?format=jpg&name=medium"
+                         alt="A little Bit fuzzy picture of HTML" width="600" height="300">
+                    <figcaption>Prettier HTML Cheat Sheet</figcaption> 
+                </figure>
+            </section>
+
+            <section id="spotify"> <!-- Section for Spotify -->
+                <header>
+                    <h2>Spotify</h2>
+                </header>
+                <p>Listen to some relaxing music while studying!</p> <!-- Description of Spotify -->
+                <iframe style="border-radius: 12px"
+                        src="https://open.spotify.com/embed/track/7vWrnIvoGCVxpBMGJO9Nbi?utm_source=generator" 
+                        width="35%" height="152" frameborder="0" allowfullscreen
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+                </iframe>
+            </section>
+
+            <section id="video"> <!-- Section for Video -->
+                <header>
+                    <h2>Video</h2>
+                    <p>Dont have 4 weeks to learn Front End? Learn everything you need for HTML in 5 minutes. </p>
+                </header>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/salY_Sm6mv4?si=Man42pAWMNlHc66Q"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                </iframe>
+            </section>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Skylars HTML Study Jams</p>
+    </footer>
+</body>
+
+</html>
